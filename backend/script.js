@@ -11,7 +11,6 @@ ConnectDB()
     console.log(chalk.red("faild to run database and server "));
     
 })
-
 // .then(()=>{
 //     app.listen(PORT , ()=>{
 //         console.log(chalk.green.bgBlack.bold.underline("Server is running on port " , PORT))
