@@ -6,6 +6,7 @@ import express from "express";
 import cors from "cors";
 import authRouter from "./router/authRouter.js";
 import googleAuthRouter from "./router/googleauth-Router.js";
+import router from "./router/userProfile.js";
 
 
 const app = express();
@@ -23,6 +24,8 @@ app.use(passport.initialize());
 app.use("/api/auth", authRouter); // ✅ only use this
 // GOOGLE ROUTES
 app.use("/api/auth", googleAuthRouter);
+
+app.use("/api/user", router);
 
 //Userprofile
 // app.use("/api/users", router);
